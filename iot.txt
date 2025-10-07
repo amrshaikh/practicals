@@ -1,0 +1,113 @@
+#p2a
+
+import RPi.GPIO as GPIO
+import time
+GPIO.setwarnings(False)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(7, GPIO.OUT)
+time.sleep(5)
+GPIO.output(7, True)
+GPIO.cleanup()
+
+#p2b
+
+import RPi.GPIO as GPIO
+import time
+GPIO.setwarning(False)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(7, GPIO.OUT)
+for i in range(5):
+	GPIO.OUTPUT(7, True)
+	time.sleep(1)
+	GPIO.OUTPUT(7, False)
+	time.sleep(1)
+GPIO.cleanup()
+
+#p3a
+
+import RPi.GPIO as GPIO
+import time
+GPIO.setwarning(False)
+def blink(pin):
+	GPIO.OUTPUT(pin, True)
+	time.sleep(0.1)
+	GPIO.OUTPUT(pin, False)
+	time.sleep(0.1)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(16, GPIO.OUT)
+GPIO.setup(18, GPIO.OUT)
+for i in range(0, 10):
+	blink(16)
+	blink(18)
+GPIO.cleanup()
+
+#p3b
+
+import RPi.GPIO as GPIO
+import time
+GPIO.setwarning(False)
+def blink(pin):
+	GPIO.OUTPUT(pin, True)
+	time.sleep(0.1)
+	GPIO.OUTPUT(pin, False)
+	time.sleep(0.1)
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(16, GPIO.OUT)
+GPIO.setup(18, GPIO.OUT)
+GPIO.setup(22, GPIO.OUT)
+GPIO.setup(33, GPIO.OUT)
+for i in range(0, 10):
+	blink(16)
+	blink(18)
+	blink(22)
+	blink(33)
+GPIO.cleanup()
+
+#p4
+
+import RPi.GPIO as IO
+import time
+IO.setwarning(False)
+IO.setmode(IO.BOARD)
+IO.setup(7, IO.OUT)
+P = IO.PWM(7, 100)
+P.start(0)
+for y in range(5):
+	for x in range(50):
+		P.changeDutyCycle(x)
+		time.sleep(0.1)
+	for x in range(50):
+		P.changeDutyCycle(50 - x)
+IO.setup(7, LOW)
+IO.cleanup()
+
+#p7
+
+sudo apt-get install python3-dev
+python3-pip
+sudo pip3 install max7219
+
+import max7219.led as led
+device.led.matrix()
+device.show.message("hello sycs")
+
+#p8
+
+sudo apt-get install apache2 -y
+
+<html>
+<head><title> Beautiful Webpage </title></head>
+<body>
+<h1>Assume it's a beautiful page</h1>
+<p>What a webpage!</p>
+<img>
+</body>
+</html>
+
+cp /home/pi/Desktop/beautiful.html/var/www/html/beautiful.html
+
+localhost/beautiful.html
+
+hostname -l
+
+sudo apt-get update
