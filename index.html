@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preserve the Globe (PTG)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-emerald-600">PTG</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-gray-700 nav-link">Home</a>
+                <a href="#mission" class="text-gray-700 nav-link">Our Mission</a>
+                <a href="#action" class="text-gray-700 nav-link">Take Action</a>
+                <a href="#engage" class="text-gray-700 nav-link">Engage</a>
+                <a href="#support" class="text-gray-700 nav-link">Support Us</a>
+            </div>
+            <a href="#support" class="hidden md:block bg-emerald-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-emerald-600 transition-colors duration-300">Donate</a>
+            <button id="mobile-menu-button" class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#home" class="block py-2 text-gray-700 nav-link">Home</a>
+            <a href="#mission" class="block py-2 text-gray-700 nav-link">Our Mission</a>
+            <a href="#action" class="block py-2 text-gray-700 nav-link">Take Action</a>
+            <a href="#engage" class="block py-2 text-gray-700 nav-link">Engage</a>
+            <a href="#support" class="block py-2 text-gray-700 nav-link">Support Us</a>
+            <a href="#support" class="block mt-2 w-full text-center bg-emerald-500 text-white font-semibold px-5 py-2 rounded-lg hover:bg-emerald-600 transition-colors duration-300">Donate</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-bg text-white min-h-[calc(100vh-72px)] flex items-center">
+            <div class="bg-black/50 w-full h-full min-h-[calc(100vh-72px)] flex items-center">
+                <div class="container mx-auto px-6 text-center">
+                    <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Preserve the Globe</h1>
+                    <p class="text-lg md:text-2xl font-light text-gray-200 mb-8">We are dedicated to conserving nature and protecting our planet for future generations.</p>
+                    <a href="#mission" class="bg-emerald-500 text-white font-semibold px-8 py-4 rounded-lg hover:bg-emerald-600 transition-all duration-300 transform hover:scale-105">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section id="mission" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Our Mission</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Our efforts are focused on these key areas to create a sustainable and healthy planet.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Goal 1 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:bg-emerald-50 transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <svg class="w-10 h-10 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v.01"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 21a9 9 0 01-9-9m9 9a9 9 0 009-9m-9 9v-1m0-13a9 9 0 019 9m-9-9a9 9 0 00-9 9"></path></svg>
+                            <h3 class="text-xl font-semibold text-gray-800">Water Ecosystems</h3>
+                        </div>
+                        <p class="mt-4 text-gray-600">Conserve and restore vital water ecosystems, from rivers to oceans.</p>
+                    </div>
+                    <!-- Goal 2 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:bg-emerald-50 transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <svg class="w-10 h-10 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-5.571 3m-16.5 4.5l5.571 3 5.571-3m-5.571 3v5.25a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25v-5.25" /></svg>
+                            <h3 class="text-xl font-semibold text-gray-800">Forest Restoration</h3>
+                        </div>
+                        <p class="mt-4 text-gray-600">Deal with deforestation and restore degraded forests to combat climate change.</p>
+                    </div>
+                    <!-- Goal 3 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:bg-emerald-50 transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <svg class="w-10 h-10 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                            <h3 class="text-xl font-semibold text-gray-800">End Desertification</h3>
+                        </div>
+                        <p class="mt-4 text-gray-600">Implement strategies to halt and reverse land degradation and desertification.</p>
+                    </div>
+                     <!-- Goal 4 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:bg-emerald-50 transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <svg class="w-10 h-10 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6H8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path></svg>
+                            <h3 class="text-xl font-semibold text-gray-800">Mountain Ecosystems</h3>
+                        </div>
+                        <p class="mt-4 text-gray-600">Conserve mountainous ecosystems, which are critical for biodiversity and water supply.</p>
+                    </div>
+                    <!-- Goal 5 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:bg-emerald-50 transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                           <svg class="w-10 h-10 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5 0l-1.5-1m0 0l-1.5 1" /></svg>
+                            <h3 class="text-xl font-semibold text-gray-800">Protect Habitats</h3>
+                        </div>
+                        <p class="mt-4 text-gray-600">Ensure the protection of all kinds of habitats, both terrestrial and aquatic.</p>
+                    </div>
+                    <!-- Goal 6 -->
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:bg-emerald-50 transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                            <svg class="w-10 h-10 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            <h3 class="text-xl font-semibold text-gray-800">Genetic Resources</h3>
+                        </div>
+                        <p class="mt-4 text-gray-600">Promote fair access to genetic resources for the benefit of the entire globe.</p>
+                    </div>
+                    <!-- Goal 7 -->
+                     <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-lg hover:bg-emerald-50 transition-all duration-300">
+                        <div class="flex items-center space-x-4">
+                           <svg class="w-10 h-10 text-emerald-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z" /></svg>
+                            <h3 class="text-xl font-semibold text-gray-800">Eliminate Poaching</h3>
+                        </div>
+                        <p class="mt-4 text-gray-600">Work towards eliminating poaching and the illegal wildlife trade.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Take Action Section -->
+        <section id="action" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">How You Can Help</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Small actions can lead to big changes. Here’s how you can contribute to a healthier planet.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Action Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/34d399/ffffff?text=Recycle" alt="Recycling" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Recycling</h3>
+                            <p class="text-gray-600 mb-4">Learn what you can recycle in your area and reduce landfill waste.</p>
+                            <a href="#" class="font-semibold text-emerald-600 hover:text-emerald-700">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Action Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/fbbf24/ffffff?text=Compost" alt="Composting" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Composting</h3>
+                            <p class="text-gray-600 mb-4">Turn your food scraps into nutrient-rich soil for your garden.</p>
+                            <a href="#" class="font-semibold text-emerald-600 hover:text-emerald-700">Start Composting &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Action Card -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/60a5fa/ffffff?text=Join+Us" alt="Joining NGOs" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Join Local NGOs</h3>
+                            <p class="text-gray-600 mb-4">Connect with local organizations to make a difference in your community.</p>
+                            <a href="#" class="font-semibold text-emerald-600 hover:text-emerald-700">Find Groups &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Engage Section -->
+        <section id="engage" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Engage & Learn</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Test your knowledge, read our latest articles, and join events.</p>
+                </div>
+
+                <!-- Tabs -->
+                <div class="mb-8 border-b border-gray-200">
+                    <ul class="flex flex-wrap -mb-px justify-center" id="engage-tabs">
+                        <li class="mr-2"><a href="#" class="inline-block p-4 text-gray-500 hover:text-gray-800 rounded-t-lg tab-link active-tab" data-tab="quiz">Eco-Quiz</a></li>
+                        <li class="mr-2"><a href="#" class="inline-block p-4 text-gray-500 hover:text-gray-800 rounded-t-lg tab-link" data-tab="news">News & Blogs</a></li>
+                        <li class="mr-2"><a href="#" class="inline-block p-4 text-gray-500 hover:text-gray-800 rounded-t-lg tab-link" data-tab="events">Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Tab Content -->
+                <div id="tab-content">
+                    <!-- Quiz Content -->
+                    <div id="quiz" class="tab-pane active">
+                        <div class="bg-gray-50 p-8 rounded-lg shadow-inner max-w-3xl mx-auto text-center">
+                            <div id="quiz-container">
+                                <h3 id="question" class="text-2xl font-semibold mb-6">What percentage of the world's water is fresh water?</h3>
+                                <div id="answers" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <!-- Answers will be injected by JS -->
+                                </div>
+                            </div>
+                            <div id="quiz-results" class="hidden">
+                                <h3 class="text-3xl font-bold text-emerald-600 mb-4">Quiz Complete!</h3>
+                                <p class="text-xl text-gray-800 mb-2">Your Score: <span id="score" class="font-bold"></span></p>
+                                <p id="feedback" class="text-gray-600 mb-6"></p>
+                                <button id="restart-quiz" class="bg-emerald-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-emerald-600 transition-colors duration-300">Try Again</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News & Blogs Content -->
+                    <div id="news" class="tab-pane hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                                <img src="https://placehold.co/600x400/a78bfa/ffffff?text=Blog+Post+1" alt="Blog post image" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <span class="text-sm text-gray-500">Conservation | Oct 15, 2025</span>
+                                    <h3 class="text-xl font-bold my-2">The Importance of Bees in Our Ecosystem</h3>
+                                    <p class="text-gray-600 mb-4">Discover why these tiny pollinators are crucial for our planet's health and food supply.</p>
+                                    <a href="#" class="font-semibold text-emerald-600 hover:text-emerald-700">Read More &rarr;</a>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                                <img src="https://placehold.co/600x400/f472b6/ffffff?text=Blog+Post+2" alt="Blog post image" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <span class="text-sm text-gray-500">Lifestyle | Oct 12, 2025</span>
+                                    <h3 class="text-xl font-bold my-2">5 Simple Swaps for a Zero-Waste Kitchen</h3>
+                                    <p class="text-gray-600 mb-4">Reduce your plastic use with these easy and affordable kitchen alternatives.</p>
+                                    <a href="#" class="font-semibold text-emerald-600 hover:text-emerald-700">Read More &rarr;</a>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                                <img src="https://placehold.co/600x400/fb923c/ffffff?text=Blog+Post+3" alt="Blog post image" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <span class="text-sm text-gray-500">Activism | Oct 10, 2025</span>
+                                    <h3 class="text-xl font-bold my-2">How Youth Are Leading the Climate Change Fight</h3>
+                                    <p class="text-gray-600 mb-4">A look at the inspiring young activists making a global impact on environmental policy.</p>
+                                    <a href="#" class="font-semibold text-emerald-600 hover:text-emerald-700">Read More &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Events Content -->
+                    <div id="events" class="tab-pane hidden">
+                         <div class="space-y-6 max-w-3xl mx-auto">
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex flex-col md:flex-row items-center gap-6">
+                                <div class="bg-emerald-500 text-white rounded-lg p-4 text-center w-24 flex-shrink-0">
+                                    <span class="block text-3xl font-bold">25</span>
+                                    <span class="block text-sm">OCT</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">Community Beach Cleanup</h3>
+                                    <p class="text-gray-600 mt-1">Join us at City Beach to help clean our shores. Gloves and bags provided. (Offline)</p>
+                                </div>
+                            </div>
+                             <div class="bg-gray-50 p-6 rounded-lg shadow-sm flex flex-col md:flex-row items-center gap-6">
+                                <div class="bg-emerald-500 text-white rounded-lg p-4 text-center w-24 flex-shrink-0">
+                                    <span class="block text-3xl font-bold">10</span>
+                                    <span class="block text-sm">NOV</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-gray-800">Webinar: Intro to Urban Composting</h3>
+                                    <p class="text-gray-600 mt-1">Learn how to start your own compost bin, even in a small apartment. (Online)</p>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donation Websites Section -->
+        <section id="support" class="py-20 bg-emerald-600 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Support the Cause</h2>
+                    <p class="mt-4 max-w-2xl mx-auto opacity-90">These leading organizations are doing incredible work. Consider supporting them directly to make a global impact.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
+                    <!-- Donation Link -->
+                    <a href="https://www.nature.org/" target="_blank" class="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                        <h3 class="font-bold text-lg">The Nature Conservancy</h3>
+                    </a>
+                    <a href="https://www.worldwildlife.org/" target="_blank" class="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                        <h3 class="font-bold text-lg">World Wildlife Fund</h3>
+                    </a>
+                    <a href="https://www.nrdc.org/" target="_blank" class="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                        <h3 class="font-bold text-lg">Natural Resources Defense Council</h3>
+                    </a>
+                    <a href="https://www.sierraclubfoundation.org/" target="_blank" class="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                        <h3 class="font-bold text-lg">Sierra Club Foundation</h3>
+                    </a>
+                    <a href="https://www.conservationfund.org/" target="_blank" class="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                        <h3 class="font-bold text-lg">The Conservation Fund</h3>
+                    </a>
+                    <a href="https://earthjustice.org/" target="_blank" class="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                        <h3 class="font-bold text-lg">Earthjustice</h3>
+                    </a>
+                     <a href="https://www.earthisland.org/" target="_blank" class="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                        <h3 class="font-bold text-lg">Earth Island Institute</h3>
+                    </a>
+                     <a href="https://www.ducks.org/" target="_blank" class="bg-white/10 p-6 rounded-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                        <h3 class="font-bold text-lg">Ducks Unlimited</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Preserve the Globe (PTG). All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
